@@ -17,3 +17,11 @@ docker compose up
         |---core          contain all application models and interfaces for all layers.
         |---framework     contain all third-party dependencies and express configuration.
         |---use-case      contain all business logic.
+
+## Environment varibales
+- Backend
+  - `PORT` for server port default in docker-compose `3000`. 
+  - `ENV` for environment configuration default in docker-compose `production`.
+
+- Frontend
+  - `endPoint` for server url default is `localhost:3000`.
