@@ -6,8 +6,14 @@ services:
       - "3000:3000"
     environment:
       - ENV=production
-
+    networks:
+      - MEAN-APP
   frontend:
     build: ./frontend
     ports:
       - "80:80"
+    networks:
+      - MEAN-APP
+networks:
+  MEAN-APP:
+    driver: bridge
