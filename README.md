@@ -3,7 +3,7 @@
 For first time, you will need to run.
 
 ```
-docker compose -f docker-compose.yml --build
+docker compose up
 ```
 
 - Angular app work on `port:80` AKA `http://localhost/`, the Angular app is built and deployed on the NGIX server.
