@@ -8,6 +8,6 @@ export default (router: Router) => {
   router.post('/ranks', asyncHandler(activityController.ranks));
   router.use('*', asyncHandler(activityController.notFound));
 
-
+  
   return router;
 }

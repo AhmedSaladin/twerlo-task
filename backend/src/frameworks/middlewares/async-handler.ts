@@ -5,8 +5,8 @@ export default (func: Function) => {
     try {
       const [data, statusCode] = await func(req);
       res.status(statusCode).json(data);
-    } catch (error) {
+    } catch (error: any) {
       next(error);
     }
   };
-}
+};
