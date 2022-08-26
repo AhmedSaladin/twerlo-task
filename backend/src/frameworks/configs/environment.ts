@@ -1,4 +1,8 @@
+import dotenv from "dotenv";
+
+dotenv.config();
+
 export const environment = {
-  environment: "development",
-  port: 3000,
+  env: process.env.ENV,
+  port: process.env.PORT,
 };

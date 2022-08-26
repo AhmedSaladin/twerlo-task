@@ -13,7 +13,7 @@ export default function ErrorHandler(
   const message = err.message;
   const statusCode = err.statusCode || Status.INTERNAL_SERVER_ERROR;
 
-  if (environment.environment === "development") logger.error(err);
+  if (environment.env === "development") logger.error(err);
   
   res.locals.errorMessage = message;
 
