@@ -1,0 +1,10 @@
+- Add test cases
+- write more error handler logic
+- add logger
+- simulate db calling
+- add docker configuration
+- adding swagger doc
+- add env variable
+- add prettier
+- add eslint
+- add husky
